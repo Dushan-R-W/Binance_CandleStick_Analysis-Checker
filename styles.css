@@ -1,0 +1,74 @@
+
+/*box-sizing: border-box;
+
+/* Set additional styling options for the columns*/
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.row:after {
+    /* padding-top: 150px; */
+    /* margin-top: 100px; */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row{
+    padding-top: 50px;
+    /* margin-top: 100px; */
+    /* margin-top: 27%; */
+}
+
+.Graph{
+    display: flex;
+    justify-content: center;
+}
+
+.HeadColumn{
+    text-align: center;
+}
+
+.sigTable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonRow{
+    font-size: 30px;
+    align-content: center;
+    margin: auto auto;
+}
+
+input {
+    width: 120px;
+  }
+
+
+  #tradeType{
+    width: 120px;
+    height: 25px;
+  }
+
+  .footerDiv{
+    padding-top: 200px;
+    margin-top: 200px;
+  }
+
+  h2{
+      margin-top: 8px;
+  }
+
+  /* .save{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 4px 8px;
+    font-size: 16px;
+    cursor: pointer;
+  } */
+  

@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>CoinEdge Signals Tracker</title>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+
+    <h1>CoinEdge Signal Tracker</h1>
+    
+        <div class="HeadColumn">
+            <h2>BTCUSDT</h2>
+            <div class="Graph">
+                <div id="Mainchart"></div>
+            </div>
+            <!-- <p>Data..</p> -->
+        </div>
+
+    <div class="row">
+
+        <!-- column 1 -->
+        <div class="column">
+            <input type="button" value="Save" id="saveSig1">
+            <h2>Signal 1</h2>
+            <table class="TableSig1 sigTable">
+                <tr>
+                   <td><label>Entry Price</label></td> 
+                   <td><label>Start Time</label></td>
+                   <td><label>Leverage</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="entryPrice1" name="Entry Price"></td>
+                    <td><input type="date" id="datetime1"></td>
+                    <td><input type="number" id="leverage1"></td>
+                </tr>
+                <tr>
+                    <td><label>Target 1</label></td>
+                    <td><label>Target 2</label></td>
+                    <td><label>Target 3</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="Target1_1" name="Target1_1"></td>
+                    <td><input type="number" id="Target2_1" name="Target2_1"></td>
+                    <td><input type="number" id="Target3_1" name="Target3_1"></td>
+                </tr>
+                <tr class="checkButn">
+                    <td><label for="tradeType1">Trade Type</label></td>
+                    <td><label for="CoinName1">Coin Name</label></td>
+                    <td></td>
+                </tr>
+                <tr class="checkButn">
+                    <td>
+                        <select name="tradeType1" id="tradeType1">
+                            <option value="long">Buy/Long</option>
+                            <option value="short">Sell/Short</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="CoinName1" id="CoinName1"></td>
+                    <td class="buttonRow"><input type="button" value="Check" id="button1"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- column 2 -->
+        <div class="column">
+            <input type="button" value="Save" id="saveSig2" class="save">
+            <h2>Signal 2</h2>
+            <table class="TableSig2 sigTable">
+                <tr>
+                   <td><label>Entry Price</label></td> 
+                   <td><label>Start Time</label></td>
+                   <td><label>Leverage</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="entryPrice2" name="Entry Price"></td>
+                    <td><input type="date" id="datetime2"></td>
+                    <td><input type="number" id="leverage2"></td>
+                </tr>
+                <tr>
+                    <td><label>Target 1</label></td>
+                    <td><label>Target 2</label></td>
+                    <td><label>Target 3</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="Target1_2" name="Target1_2"></td>
+                    <td><input type="number" id="Target2_2" name="Target2_2"></td>
+                    <td><input type="number" id="Target3_2" name="Target3_2"></td>
+                </tr>
+                <tr class="checkButn">
+                    <td><label for="tradeType2">Trade Type</label></td>
+                    <td><label for="CoinName2">Coin Name</label></td>
+                    <td></td>
+                </tr>
+                <tr class="checkButn">
+                    <td>
+                        <select name="tradeType2" id="tradeType2">
+                            <option value="long">Buy/Long</option>
+                            <option value="short">Sell/Short</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="CoinName2" id="CoinName2"></td>
+                    <td class="buttonRow"><input type="button" value="Check" id="button2"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- column 3 -->
+        <div class="column">
+            <input type="button" value="Save" id="saveSig3" class="save">
+            <h2>Signal 3</h2>
+            <table class="TableSig3 sigTable">
+                <tr>
+                   <td><label>Entry Price</label></td> 
+                   <td><label>Start Time</label></td>
+                   <td><label>Leverage</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="entryPrice3" name="Entry Price"></td>
+                    <td><input type="date" id="datetime3"></td>
+                    <td><input type="number" id="leverage3"></td>
+                </tr>
+                <tr>
+                    <td><label>Target 1</label></td>
+                    <td><label>Target 2</label></td>
+                    <td><label>Target 3</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="Target1_3" name="Target1_3"></td>
+                    <td><input type="number" id="Target2_3" name="Target2_3"></td>
+                    <td><input type="number" id="Target3_3" name="Target3_3"></td>
+                </tr>
+                <tr class="checkButn">
+                    <td><label for="tradeType3">Trade Type</label></td>
+                    <td><label for="CoinName3">Coin Name</label></td>
+                    <td></td>
+                </tr>
+                <tr class="checkButn">
+                    <td>
+                        <select name="tradeType3" id="tradeType3">
+                            <option value="long">Buy/Long</option>
+                            <option value="short">Sell/Short</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="CoinName3" id="CoinName3"></td>
+                    <td class="buttonRow"><input type="button" value="Check" id="button3"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- row 2 -->
+    <div class="row">
+
+        <!-- column 1 -->
+        <div class="column">
+            <input type="button" value="Save" id="saveSig4" class="save">
+            <h2>Signal 4</h2>
+            <table class="TableSig4 sigTable">
+                <tr>
+                <td><label>Entry Price</label></td> 
+                <td><label>Start Time</label></td>
+                <td><label>Leverage</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="entryPrice4" name="Entry Price"></td>
+                    <td><input type="date" id="datetime4"></td>
+                    <td><input type="number" id="leverage4"></td>
+                </tr>
+                <tr>
+                    <td><label>Target 1</label></td>
+                    <td><label>Target 2</label></td>
+                    <td><label>Target 3</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="Target1_4" name="Target1_4"></td>
+                    <td><input type="number" id="Target2_4" name="Target2_4"></td>
+                    <td><input type="number" id="Target3_4" name="Target3_4"></td>
+                </tr>
+                <tr class="checkButn">
+                    <td><label for="tradeType4">Trade Type</label></td>
+                    <td><label for="CoinName4">Coin Name</label></td>
+                    <td></td>
+                </tr>
+                <tr class="checkButn">
+                    <td>
+                        <select name="tradeType4" id="tradeType4">
+                            <option value="long">Buy/Long</option>
+                            <option value="short">Sell/Short</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="CoinName4" id="CoinName4"></td>
+                    <td class="buttonRow"><input type="button" value="Check" id="button4"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- column 2 -->
+        <div class="column">
+            <input type="button" value="Save" id="saveSig5" class="save">
+            <h2>Signal 5</h2>
+            
+            <table class="TableSig5 sigTable" >
+                <tr>
+                <td><label>Entry Price</label></td> 
+                <td><label>Start Time</label></td>
+                <td><label>Leverage</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="entryPrice5" name="Entry Price"></td>
+                    <td><input type="date" id="datetime5"></td>
+                    <td><input type="number" id="leverage5"></td>
+                </tr>
+                <tr>
+                    <td><label>Target 1</label></td>
+                    <td><label>Target 2</label></td>
+                    <td><label>Target 3</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="Target1_5" name="Target1_5"></td>
+                    <td><input type="number" id="Target2_5" name="Target2_5"></td>
+                    <td><input type="number" id="Target3_5" name="Target3_5"></td>
+                </tr>
+                <tr class="checkButn">
+                    <td><label for="tradeType5">Trade Type</label></td>
+                    <td><label for="CoinName5">Coin Name</label></td>
+                    <td></td>
+                </tr>
+                <tr class="checkButn">
+                    <td>
+                        <select name="tradeType5" id="tradeType5">
+                            <option value="long">Buy/Long</option>
+                            <option value="short">Sell/Short</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="CoinName5" id="CoinName5"></td>
+                    <td class="buttonRow"><input type="button" value="Check" id="button5"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- column 3 -->
+        <div class="column">
+            <input type="button" value="Save" id="saveSig6" class="save">
+            <h2>Signal 6</h2>
+            <table class="TableSig6 sigTable">
+                <tr>
+                <td><label>Entry Price</label></td> 
+                <td><label>Start Time</label></td>
+                <td><label>Leverage</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="entryPrice6" name="Entry Price"></td>
+                    <td><input type="date" id="datetime6"></td>
+                    <td><input type="number" id="leverage6"></td>
+                </tr>
+                <tr>
+                    <td><label>Target 1</label></td>
+                    <td><label>Target 2</label></td>
+                    <td><label>Target 3</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="Target1_6" name="Target1_6"></td>
+                    <td><input type="number" id="Target2_6" name="Target2_6"></td>
+                    <td><input type="number" id="Target3_6" name="Target3_6"></td>
+                </tr>
+                <tr class="checkButn">
+                    <td><label for="tradeType6">Trade Type</label></td>
+                    <td><label for="CoinName6">Coin Name</label></td>
+                    <td></td>
+                </tr>
+                <tr class="checkButn">
+                    <td>
+                        <select name="tradeType6" id="tradeType6">
+                            <option value="long">Buy/Long</option>
+                            <option value="short">Sell/Short</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="CoinName6" id="CoinName6"></td>
+                    <td class="buttonRow"><input type="button" value="Check" id="button6"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- <script>
+        var binanceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
+        var tradeDiv = document.getElementById("Price_list")
+        
+        binanceSocket.onmessage = function (event) {
+            console.log(event.data);
+
+            var messageObejct = JSON.parse(event.data)
+        }
+    </script> -->
+
+    <script src="BTC_Chart.js"></script>
+    <script src="Web_JS.js"></script>
+    <script data-main="scripts/app" src="r.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</body>
+
+<div></div>
+<footer>
+    <div class="footerDiv">
+        <p>CoinEdge</p>
+    </div> 
+</footer>
+</html>
+
+
